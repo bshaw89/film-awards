@@ -3,7 +3,7 @@ import Button from "./Button"
 
 import classnames from "classnames";
 
-export default function Movie(props) {
+export default function Nominated(props) {
   // const [nominate, setNominate] = useState([]);
   const movieInfoClass = classnames("movie__info", {
     // "movie__info--explicit": props.collectionExplicitness === "explicit"
@@ -11,7 +11,9 @@ export default function Movie(props) {
 
   // the individual movies
 
-  const { results } = props
+  console.log("NOMINATED props:", props.nominate)
+
+  const { results } = props.nominate
   // console.log('NOMINATE', nominate);
   
   // const nominater = function() {
