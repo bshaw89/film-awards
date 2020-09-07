@@ -32,7 +32,7 @@ export default function Nominated(props) {
       <div className={nomInfoClass}>
         <div className="movie__name">{props.Title}</div>
         <div className="movie__year">{props.Year}</div>
-        <Button onClick={props.denominator}/>
+        {props.nominate.length > 0 && <Button onClick={props.denominator}>Remove</Button>}
       </div>
     </article>
   );

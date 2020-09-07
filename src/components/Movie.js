@@ -12,7 +12,7 @@ export default function Movie(props) {
   // the individual movies
 
   const { results } = props
-  // console.log('NOMINATE', nominate);
+  console.log('MOVIE PROPS', props);
   
   // const nominater = function() {
   //   return setNominate(oldNominate => [...oldNominate, props])
@@ -30,7 +30,7 @@ export default function Movie(props) {
       <div className={movieInfoClass}>
         <div className="movie__name">{props.Title}</div>
         <div className="movie__year">{props.Year}</div>
-        <Button onClick={props.nominater}/>
+        {props.Title && <Button onClick={props.nominater}>Nominate</Button>}
       </div>
     </article>
   );

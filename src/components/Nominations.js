@@ -16,10 +16,10 @@ export default function Nominations(props) {
   // }
 
   if (results.length > 0 && results !== undefined) {
-  return results.map(movie => {
-      return <Nominated key={movie.imdbID} nominate={props.nominate} denominator={() => props.denominator(movie)} {...movie} />;
+  return results.map((movie, index) => {
+      return <Nominated key={index} nominate={props.nominate} denominator={() => props.denominator(movie)} {...movie} />;
   });
 } else {
-  return <Movie />
+  return <Nominated nominate={props.nominate} />
 }
 }

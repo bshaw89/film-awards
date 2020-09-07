@@ -19,7 +19,9 @@ code {
 body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #181725;
-  padding: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,13 +61,21 @@ label {
 header,
 section {
   margin-bottom: 2rem;
-  min-width: 54rem;
-  max-width: 54rem;
+  /* min-width: 54rem;
+  max-width: 54rem; */
 }
 
 .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background: darkgoldenrod;
 }
 
 .flex-grid {
@@ -74,6 +84,13 @@ section {
 
 .col {
   flex: 1;
+}
+
+.titles {
+  color: #fefefe;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .radius {
@@ -88,6 +105,16 @@ section {
 
 .search__form {
   flex-grow: 1;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
+  color: #fefefe;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .movie {
@@ -130,13 +157,9 @@ section {
   border-bottom-right-radius: 0.5rem;
   /* border: 0.2rem solid; */
   /* border-color: goldenrod; */
-  /* background: #E1AA16; */
+  background: #201f2f;
   overflow: hidden;
   color: goldenrod;
-}
-
-.album__info--explicit {
-  background: rgba(182, 21, 64, 0.4);
 }
 
 .movie__name {

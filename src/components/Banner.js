@@ -6,7 +6,7 @@ export default function Banner(props) {
 
   return (
     <section className="banner">
-      <div>Nominations are in!</div>
+      ✉️ Nominations are in! ✉️
     </section>
   );
 }

@@ -19,10 +19,10 @@ export default function Results(props) {
 console.log('RESULTS', props.results)
 
   if (results !== undefined) {
-  return results.map(movie => {
+  return results.map((movie, index) => {
     if (movie.Type === "movie") {
       return (
-      <Movie key={movie.imdbID} nominater={() => props.nominater(movie)} {...movie} />
+      <Movie key={index} nominater={() => props.nominater(movie)} {...movie} />
       )
     }
   });
