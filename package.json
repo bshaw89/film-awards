@@ -8,12 +8,14 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
     "classnames": "^2.2.6",
+    "express": "^4.17.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "server": "node server/app.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
