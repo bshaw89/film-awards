@@ -4,6 +4,7 @@ import axios from "axios";
 import SearchBar from "./SearchBar";
 import Results from "./Results";
 import Nominations from "./Nominations";
+import Banner from "./Banner"
 
 
 export default function LiveSearch(props) {
@@ -19,8 +20,18 @@ export default function LiveSearch(props) {
   }, [term, setResults])
 
   const nominater = function(movie) {
-    setNominate(oldNominate => [...oldNominate, movie])
-    console.log('Nominate Obj.', nominate);
+    if (nominate.includes(movie)) {
+      return null;
+    } else {
+      setNominate(oldNominate => [...oldNominate, movie])
+      console.log('Nominate Obj.', nominate);
+    }
+    // is saving to its own state for each movie...
+    // need it to join together
+  }
+
+  const denominator = function(movie) {
+      nominate.splice(movie, 1);
     // is saving to its own state for each movie...
     // need it to join together
   }
@@ -28,6 +39,7 @@ export default function LiveSearch(props) {
   return (
     <Fragment>
       <header className="logo">
+        {nominate.length >= 5 && <Banner />}
         {/* <img src="images/brand.png" alt="Brand" /> */}
       </header>
       <main>
@@ -37,7 +49,7 @@ export default function LiveSearch(props) {
             <Results results={results} nominater={nominater} />
           </div>
           <div className='col'>
-            <Nominations nominate={nominate}/>
+            <Nominations nominate={nominate} denominator={denominator} />
           </div>
         </div>
       </main>

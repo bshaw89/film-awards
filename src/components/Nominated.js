@@ -5,7 +5,7 @@ import classnames from "classnames";
 
 export default function Nominated(props) {
   // const [nominate, setNominate] = useState([]);
-  const movieInfoClass = classnames("movie__info", {
+  const nomInfoClass = classnames("nom__info", {
     // "movie__info--explicit": props.collectionExplicitness === "explicit"
   });
 
@@ -27,12 +27,12 @@ export default function Nominated(props) {
   // function to store into object?
 
   return (
-    <article className="movie">
+    <article className="nom">
       {props.Poster && <img className="movie__thumbnail" src={props.Poster} alt="Movie" />}
-      <div className={movieInfoClass}>
+      <div className={nomInfoClass}>
         <div className="movie__name">{props.Title}</div>
         <div className="movie__year">{props.Year}</div>
-        <Button onClick={props.nominater}/>
+        <Button onClick={props.denominator}/>
       </div>
     </article>
   );

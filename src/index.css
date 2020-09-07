@@ -1,4 +1,4 @@
-/* body {
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,7 +10,7 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-} */
+}
 
 * {
   box-sizing: border-box;
@@ -96,6 +96,12 @@ section {
   margin-bottom: 0.5rem;
 }
 
+.nom {
+  display: flex;
+  color: #fefefe;
+  margin-bottom: 0.5rem;
+}
+
 .movie__thumbnail {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -112,6 +118,21 @@ section {
   border-bottom-right-radius: 0.5rem;
   background: #201f2f;
   overflow: hidden;
+}
+
+.nom__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-left: 1rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  /* border: 0.2rem solid; */
+  /* border-color: goldenrod; */
+  /* background: #E1AA16; */
+  overflow: hidden;
+  color: goldenrod;
 }
 
 .album__info--explicit {
@@ -225,13 +246,13 @@ section {
   background-color: transparent;
 }
 
-/* .button:hover {
+.button:hover {
   @include button-active;
 
-  color: $black;
-  background-color: $white;
+  color: black;
+  background-color: goldenrod;
   border: 2px solid transparent;
-} */
+}
 
 .button--danger {
   color: red;
