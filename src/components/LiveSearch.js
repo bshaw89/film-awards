@@ -14,7 +14,7 @@ export default function LiveSearch(props) {
 
 
   useEffect(() => {
-    axios.get(`http://www.omdbapi.com/?s=${term}&apikey=85afc2fd`).then((response) => {
+    axios.get(`https://www.omdbapi.com/?s=${term}&apikey=85afc2fd`).then((response) => {
       setResults(response.data.Search);
     });
   }, [term, setResults])
