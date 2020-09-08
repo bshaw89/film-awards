@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Production Build
+[Heroku](https://shoppies-b89.herokuapp.com/)
+
 ## Screenshots
 ![screen1](https://github.com/bshaw89/shoppies/blob/master/public/screenshots/Screen%20Shot%202020-09-07%20at%206.06.28%20PM.png)
 
