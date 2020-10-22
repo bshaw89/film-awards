@@ -45,7 +45,7 @@ export default function LiveSearch(props) {
       <main className="box">
         {nominate.length >= 5 && <div className="banner-top"><Banner /></div>}
       <div className="brand">
-        The Shoppies
+        Film Awards
       </div>
         <SearchBar onSearch={term => setTerm(term)} />
         <div className='flex-grid'>
