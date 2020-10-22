@@ -5,6 +5,6 @@ A livesearch app allowing users to search the OMDB API and add films to a nomine
 [film-awards-b89.herokuapp.com](https://film-awards-b89.herokuapp.com/)
 
 ## Screenshots
-![screen1](https://github.com/bshaw89/shoppies/blob/master/public/screenshots/Screen%20Shot%202020-09-07%20at%206.06.28%20PM.png)
+![screen1](https://github.com/bshaw89/film-awards/blob/master/public/screenshots/Screen%20Shot%202020-10-22%20at%2012.43.32%20PM.png)
 
-![screen2](https://github.com/bshaw89/shoppies/blob/master/public/screenshots/Screen%20Shot%202020-09-07%20at%206.12.35%20PM.png)
+![screen2](https://github.com/bshaw89/film-awards/blob/master/public/screenshots/Screen%20Shot%202020-10-22%20at%2012.44.47%20PM.png)
