@@ -1,5 +1,5 @@
 ## Film Awards
-A livesearch app using allowing users to search the OMDB API and add films to a nominees list, built using React.
+A livesearch app allowing users to search the OMDB API and add films to a nominees list, built using React.
 
 ## Live Example
 [Heroku](https://shoppies-b89.herokuapp.com/)
